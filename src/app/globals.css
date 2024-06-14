@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+
+.withTransition {
+  transition: all 0.3s ease-out;
+}
+.container {
+  @apply mx-auto my-5 max-w-7xl;
+}
+.home-bg {
+  @apply bg-[url('../assets/home/background-home-mobile.jpg')] bg-cover bg-fixed bg-center bg-no-repeat text-white md:bg-[url('../assets/home/background-home-tablet.jpg')] lg:bg-[url('../assets/home/background-home-desktop.jpg')] lg:bg-top;
+}
+.destination-bg {
+  @apply bg-[url('../assets/destination/background-destination-mobile.jpg')] bg-cover bg-fixed bg-center bg-no-repeat text-white md:bg-[url('../assets/destination/background-destination-tablet.jpg')] lg:bg-[url('../assets/destination/background-destination-desktop.jpg')] lg:bg-top;
+}
+.crew-bg {
+  @apply bg-[url('../assets/crew/background-crew-mobile.jpg')] bg-cover bg-fixed bg-center bg-no-repeat text-white md:bg-[url('../assets/crew/background-crew-tablet.jpg')] lg:bg-[url('../assets/crew/background-crew-desktop.jpg')] lg:bg-top;
+}
+.technology-bg {
+  @apply bg-[url('../assets/technology/background-technology-mobile.jpg')] bg-cover bg-fixed bg-center bg-no-repeat text-white md:bg-[url('../assets/technology/background-technology-tablet.jpg')] lg:bg-[url('../assets/technology/background-technology-desktop.jpg')] lg:bg-top;
+}
+.page-header {
+  @apply mb-12 text-center uppercase md:text-left;
+}
+.page-header span {
+  @apply mr-3 font-extrabold text-gray-400/50;
+}
+
+/* TYPOGRAPHY */
+.nav-text {
+  @apply font-barlow-condensed text-xs uppercase leading-normal tracking-[2px];
+}
+.body-text {
+  @apply px-2 py-3 text-center font-barlow text-sm tracking-normal text-secondary md:px-20 md:text-base lg:p-0 lg:text-left;
+}
+.subheading-s {
+  @apply font-barlow-condensed text-sm font-[100] uppercase leading-normal tracking-wide;
+}
+.subheading-l {
+  @apply font-bellefair text-lg uppercase leading-normal tracking-normal;
+}
+.heading-xs {
+  @apply font-barlow-condensed text-lg uppercase leading-normal tracking-[4px];
+}
+.heading-s {
+  @apply font-bellefair text-xl uppercase leading-normal tracking-normal;
+}
+.heading-m {
+  @apply font-bellefair text-2xl uppercase leading-normal tracking-normal;
+}
+.heading-l {
+  @apply font-bellefair text-2xl uppercase leading-normal tracking-normal md:text-3xl;
+}
+.heading-xl {
+  @apply font-bellefair text-4xl uppercase leading-normal tracking-normal;
+}
+
+/* KEY FRAMES */
+@keyframes show-btn-padding {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 15%;
+  }
+}
+@keyframes slide-in-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes slide-out-right {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+  to {
+    display: none;
+  }
+}

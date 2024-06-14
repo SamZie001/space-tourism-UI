@@ -8,11 +8,30 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "hsla(230, 35%, 7%)",
+        secondary: "hsla(231, 77%, 90%)",
       },
+    },
+    fontSize: {
+      xs: "14px",
+      sm: "16px",
+      base: "18px",
+      lg: "28px",
+      xl: "32px",
+      "2xl": "56px",
+      "3xl": "100px",
+      "4xl": "144px",
+    },
+    fontFamily: {
+      barlow: "'Barlow', sans-serif",
+      bellefair: "'Bellefair', serif",
+      "barlow-condensed": "'Barlow Condensed', sans-serif",
+    },
+    animation: {
+      "show-btn-padding": "show-btn-padding 0.3s ease-in-out forwards",
+      "slide-in-right": "slide-in-right 0.3s ease-in-out forwards",
+      "slide-out-right": "slide-out-right 0.3s ease-in-out forwards",
     },
   },
   plugins: [],
