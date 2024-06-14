@@ -61,6 +61,7 @@ const Navbar = () => {
           alt=""
           width={24}
           height={21}
+          hidden={show}
           className="cursor-pointer"
           onClick={() => setShow(true)}
         />
