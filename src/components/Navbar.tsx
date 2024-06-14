@@ -67,7 +67,7 @@ const Navbar = () => {
 
         {/* Side mobile nav */}
         <div
-          className={`${show ? "animate-slide-in-right" : "animate-slide-out-right"} fixed -right-full top-0 flex h-screen w-3/5 flex-col space-y-8 backdrop-blur-lg`}
+          className={`${show ? "animate-slide-in-right" : "animate-slide-out-right"} fixed -right-full top-0 flex h-screen w-3/5 flex-col space-y-8 bg-primary/50 backdrop-blur-lg`}
         >
           <Image
             src={close}
